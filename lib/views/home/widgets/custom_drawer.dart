@@ -1,9 +1,8 @@
-import 'package:flutter/material.dart';
-import 'package:news/models/category_model.dart';
-import 'package:news/pages/home/home_view.dart';
-import 'package:news/pages/home/widgets/drawer_item.dart';
+// ignore_for_file: must_be_immutable
 
-import '../../settings/settings_view.dart';
+import 'package:flutter/material.dart';
+
+import 'package:news/views/home/widgets/drawer_item.dart';
 
 class CustomDrawer extends StatelessWidget {
   final String? title;
@@ -34,9 +33,7 @@ class CustomDrawer extends StatelessWidget {
             alignment: Alignment.center,
             color: theme.colorScheme.primary,
             child: Text(
-              (title != null)
-                  ? title!
-                  : 'News App!',
+              (title != null) ? title! : 'News App!',
               style: theme.textTheme.titleLarge,
             ),
           ),

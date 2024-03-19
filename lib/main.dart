@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:news/core/theme/application_theme.dart';
-import 'package:news/pages/home/home_view.dart';
-import 'package:news/pages/settings/settings_view.dart';
-import 'package:news/pages/splash/splash_view.dart';
+import 'package:news/views/home/home_view.dart';
+import 'package:news/views/settings/settings_view.dart';
+import 'package:news/views/splash/splash_view.dart';
 
 void main() {
   runApp(const MyApp());

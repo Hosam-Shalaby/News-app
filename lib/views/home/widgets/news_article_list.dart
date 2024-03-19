@@ -1,3 +1,5 @@
+// ignore_for_file: must_be_immutable
+
 import 'package:flutter/material.dart';
 import 'package:news/core/network_layer/api_manager.dart';
 import '../../../models/article_model.dart';
@@ -15,7 +17,7 @@ class NewsArticleList extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return FutureBuilder(
-        future: ApiManager.fetchArticles(source.id!),
+        future: ApiManager.fetchArticles(source.id),
         builder: (context, snapshot) {
           if (snapshot.hasError) {
             return Center(child: Text(snapshot.error.toString()));

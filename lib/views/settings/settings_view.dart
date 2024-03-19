@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:news/pages/home/home_view.dart';
+import 'package:news/views/home/home_view.dart';
 
 import '../home/widgets/custom_drawer.dart';
 
